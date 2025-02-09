@@ -1,48 +1,48 @@
 body {
-    font-family: font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #4B0082, #2C6B3F); /* Deep Scorpio purple to Capricorn green */
-    color: white;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(135deg, #000000, #9B1B30); /* Bold black to Netflix red gradient */
+    color: white;
     text-align: center;
-    background-image: url('https://www.example.com/constellation-background.png'); /* Background constellation pattern */
-    background-size: cover;
-    background-position: center;
     position: relative;
+    overflow: hidden;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for header */
+    background-color: rgba(0, 0, 0, 0.7); /* Slight transparency for a modern feel */
     padding: 20px 40px;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     margin: 0;
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 10px;
 }
 
 section {
     margin: 20px;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background for content */
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black background for sections */
     border-radius: 12px;
     max-width: 600px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 h2 {
     font-size: 1.8rem;
-    color: #FFD700; /* Golden accents for a touch of shine and ambition */
+    color: #FFD700; /* Golden accents for a touch of shine and leadership */
 }
 
 #contact p {
@@ -66,29 +66,28 @@ footer a {
     text-decoration: none;
 }
 
-/* Constellation effect */
-@keyframes starAnimation {
+/* Dynamic Background with abstract floating elements */
+@keyframes floatEffect {
     0% {
-        opacity: 0;
+        transform: translateX(-10px) rotate(10deg);
     }
     50% {
-        opacity: 1;
+        transform: translateX(10px) rotate(-10deg);
     }
     100% {
-        opacity: 0;
+        transform: translateX(-10px) rotate(10deg);
     }
 }
 
-.stars {
+.floating-elements {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.7) 1px, transparent 1px);
-    background-size: 10px 10px;
-    animation: starAnimation 1.5s infinite ease-in-out;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: url('https://www.example.com/abstract-shapes.png') no-repeat center;
+    background-size: contain;
+    animation: floatEffect 5s infinite ease-in-out;
     pointer-events: none;
     opacity: 0.2;
 }
-
