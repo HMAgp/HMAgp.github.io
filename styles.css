@@ -9,6 +9,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: url('https://www.example.com/constellation-background.png'); /* Background constellation pattern */
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 header {
@@ -61,3 +65,30 @@ footer a {
     color: #FFD700;
     text-decoration: none;
 }
+
+/* Constellation effect */
+@keyframes starAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.7) 1px, transparent 1px);
+    background-size: 10px 10px;
+    animation: starAnimation 1.5s infinite ease-in-out;
+    pointer-events: none;
+    opacity: 0.2;
+}
+
