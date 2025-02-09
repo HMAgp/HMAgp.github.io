@@ -1,27 +1,21 @@
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pamela Paraison - Administrative Assistant</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Pamela Paraison</h1>
-        <p> Put a little extra love in everything you do.</p>
-    </header>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to reach out or ask questions, feel free to email me directly, or fill out the form below to send a message.</p>
     
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am an experienced Administrative Assistant with a strong focus on organization, communication, and efficient office management.</p>
-    </section>
+    <!-- Direct Email Link -->
+    <a href="mailto:youremail@example.com" class="email-link">Email Me</a>
     
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: writer@pamelaparaison.com</p>
-        <p></p>
-    </section>
-    <div class="stars"></div>
-</body>
-</html>
+    <!-- Contact Form Section -->
+    <form action="https://formspree.io/f/yourformid" method="POST" id="contact-form" class="contact-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+        
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required placeholder="Type your message here"></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</section>
