@@ -90,4 +90,72 @@ footer a {
     animation: floatEffect 5s infinite ease-in-out;
     pointer-events: none;
     opacity: 0.2;
+} /* Contact Section Styling */
+#contact {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for contrast */
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    color: white;
 }
+
+#contact h2 {
+    font-size: 2rem;
+    color: #FFD700; /* Golden highlight for titles */
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.email-link {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #9B1B30; /* Netflix red */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.email-link:hover {
+    background-color: #FFD700; /* Gold hover effect */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #2C2C2C;
+    color: white;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    background-color: #9B1B30;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #FFD700; /* Gold hover effect */
+}
+
