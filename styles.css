@@ -114,3 +114,12 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+.about-me {
+    max-width: 800px; /* Keeps text from stretching too wide */
+    margin: 0 auto 40px auto; /* Centers and adds spacing below */
+    text-align: center;
+    line-height: 1.8; /* Improves readability */
+    font-size: 1.3rem; /* Makes text slightly larger */
+    color: #444; /* Slightly softer contrast */
+    padding: 20px;
+}
